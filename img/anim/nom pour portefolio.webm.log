@@ -1,0 +1,19 @@
+C:/Users/fefe5/Downloads/ffmpeg-6.1-essentials_build/ffmpeg-6.1-essentials_build/bin/ffmpeg.exe -hide_banner -y -y -r 24 -i C:/Users/fefe5/OneDrive/Documents/Krita/Dessin/image%04d.png -c:v libvpx-vp9 -b:v 2M C:/Users/fefe5/OneDrive/Documents/Krita/Dessin/nom pour portefolio.webm
+=====================================================
+Input #0, image2, from 'C:/Users/fefe5/OneDrive/Documents/Krita/Dessin/image%04d.png':
+  Duration: 00:00:04.04, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown), 1488x718 [SAR 11811:11811 DAR 744:359], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> vp9 (libvpx-vp9))
+Press [q] to stop, [?] for help
+[libvpx-vp9 @ 0000020902629a40] v1.13.1-519-g8a35c7e58
+Output #0, webm, to 'C:/Users/fefe5/OneDrive/Documents/Krita/Dessin/nom pour portefolio.webm':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: vp9, yuva420p(tv, progressive), 1488x718 [SAR 1:1 DAR 744:359], q=2-31, 2000 kb/s, 24 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libvpx-vp9
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    frame=   11 fps=0.0 q=14.0 size=       0kB time=00:00:00.45 bitrate=   8.4kbits/s speed=0.867x    frame=   24 fps= 23 q=8.0 size=       0kB time=00:00:01.00 bitrate=   3.8kbits/s speed=0.96x    frame=   34 fps= 22 q=12.0 size=       0kB time=00:00:01.41 bitrate=   2.7kbits/s speed=0.913x    frame=   43 fps= 21 q=14.0 size=       0kB time=00:00:01.79 bitrate=   2.1kbits/s speed=0.872x    frame=   51 fps= 20 q=6.0 size=       0kB time=00:00:02.12 bitrate=   1.8kbits/s speed=0.83x    frame=   60 fps= 20 q=1.0 size=       0kB time=00:00:02.50 bitrate=   1.5kbits/s speed=0.816x    frame=   76 fps= 20 q=1.0 size=       0kB time=00:00:03.16 bitrate=   1.2kbits/s speed=0.817x    [out#0/webm @ 000002090256d940] video:487kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.425324%
+frame=  101 fps= 23 q=0.0 Lsize=     494kB time=00:00:04.16 bitrate= 970.6kbits/s speed=0.931x    

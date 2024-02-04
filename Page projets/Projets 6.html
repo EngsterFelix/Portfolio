@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Salsa&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/animprojets.css">
+    <link rel="stylesheet" href="../css/gallerieprojets.css">
+
+</head>
+<body>
+    <div id="loader">
+        <img src="../img/anim/loader+lent.gif" alt="Chargement en cours">
+      </div>
+    <header>
+        <nav>
+            <div class="navbar3">
+                <div class="header3">
+                    <ul class="menu3">
+                        <li> <a href="../index.html">Home</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+        <h1 class='Pageprojets' >DashBoard</h1>
+        <div class="descprojets">
+                    <p>
+                    Pour ce Projet réalisé lors de la 2e année de ma formation, nous avons du réaliser un site Tableau de Bord. Avec une Base de données et nos compétences en developpement,
+                    nous avons du réalisé des graphiques a partir d'une grande base de donnée, ici, la consommation de la Dordogne depuis 2011.    
+                    </p>
+
+        </div>
+
+    <div class="container2">
+        <ul>
+            <li>
+                <a href="">
+                    <figure >
+                        <img class="imgGallerie" src='./image Projets/Projets 6/0.jpg' alt='Volcano and lava field against a stormy sky'>
+                        <figcaption>Le Dashboard devant tenir en une page <br>
+                        Avec 5 graphiques différents</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 6/1.png' alt='Guy on a bike ok a wooden bridge with a forest backdrop'>
+                        <figcaption>Filtrage pour les données des graphiques 
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 6/2.png' alt='Person standing alone in a misty forest'>
+                        <figcaption>Plusieurs types de graphiques <br> utilisés,
+                        Ici: graphique Bar Chart</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 6/3.png' alt='Person hiking on a trail through mountains while taking a photo with phone'>
+                        <figcaption>Dans la Base de données, <br> Plusieurs données utilisables <br> comme les différents secteur et opérateurs</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 6/4.jpg' alt='Street scene with person walking and others on motorbikes, all wearing masks'>
+                        <figcaption>Des données dynamiques en fonction des opérateurs <br> et des années</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 6/5.jpg' alt='Fashionable-looking girl with blond hair and pink sunglasses'>
+                        <figcaption>Utilisation d'un nouvel <br> ouil: ChartJS</figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <h1 class='Pageprojets' style="  font-size: 7vh;" >Compétences utilisées</h1>
+    <div id='iconCompétences' class="flottement">
+           <img src="../img/php.png" style=" height: 80px; margin: auto; padding: 30px;" alt="" srcset="">
+    <img src="../img/sql.png" style=" height: 70px; width: 200px; width: 80px; margin: auto; padding: 30px;" alt="" srcset="">
+    <img src="../img/html.png" style=" height: 80px; width: 80px; margin: auto; padding: 30px;" alt="" srcset="">
+    <img src="../img/css.png" style=" height: 80px; width: 80px; margin: auto; padding: 30px;" alt="" srcset="">
+
+    
+    </div>
+ 
+
+    
+    <a href="../Page projets/Projets 4.html">
+        <div class="button">Projet Suivant</div>
+      </a>
+    
+    </a>
+    <script>
+        
+document.addEventListener('DOMContentLoaded', function () {
+    var loader = document.getElementById('loader');
+    var body = document.body;
+    var gif = document.querySelector('#loader img');
+
+    // Attendez 2 secondes avant de montrer le GIF
+    setTimeout(function () {
+        gif.style.display = 'block';
+    }, 2000);
+
+    // Attacher un événement de fin de lecture du GIF
+    gif.addEventListener('load', function () {
+        // Masquer l'écran de chargement avec fondu
+        loader.style.transition = 'opacity 2s ease-in-out';
+        loader.style.opacity = 0;
+        
+        // Rétablir le défilement et cacher le loader après le fondu
+        setTimeout(function () {
+            body.classList.remove('loading'); /* Rétablit le défilement après le chargement */
+            loader.style.visibility = 'hidden';
+        }, 4000); // Vous pouvez ajuster la durée selon vos besoins
+    });
+});
+$(window).on("load", function () {
+    $("#loader").fadeOut(4000, function () {
+        // Animation terminée, masquer le loader
+        $("#loader").hide();
+    });
+});
+
+    </script>
+
+</body>
+</html>

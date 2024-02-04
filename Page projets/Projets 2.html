@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Salsa&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link rel="stylesheet" href="../css/animprojets.css">
+    <link rel="stylesheet" href="../css/gallerieprojets.css">
+
+</head>
+<body>
+
+       
+    <div id="loader">
+        <img src="../img/anim/loader+lent.gif" alt="Chargement en cours">
+      </div>
+    
+    <header>
+        <nav>
+            <div class="navbar3">
+                <div class="header3">
+                    <ul class="menu3">
+                        <li> <a href="../index.html">Home</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+        <h1 class='Pageprojets' >Affiches </h1>
+        <div class="descprojets">
+                    <p>
+                        Ces premières affiches sont réalisées pour une vente de légumes BIO qui a lieu dans mon village. Le professionel qui organise ce marché m'a donc demandé de les réalisés en accord avec ses idées.
+                     <br>
+                     <br>
+                        De plus, les autres affiches ont été réalisées pour "Planête courge", le professionnel m'a fais une demande pour créer une affiche, un logo et un track pour l'événement.
+                        
+                        J'ai réalisé ces affiches sur Photoshop et cela m'a vraiment permis de dévolopper mes compétences sur ce logiciel. J'ai du respecter une charte graphique, car de nombreuses affiches m'ont été
+                        demandées. 
+                    </p>
+
+        </div>
+
+    <div class="container2">
+        <ul>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 2/1.jpeg' alt='Volcano and lava field against a stormy sky'>
+                        <figcaption>Première affiche pour <br>la Vente  de legumes</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 2/2.png' alt='Guy on a bike ok a wooden bridge with a forest backdrop'>
+                        <figcaption>Affiche réalisée pour Marché de producteurs local</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 2/3.png' alt='Person standing alone in a misty forest'>
+                        <figcaption>Affiche pour un post sur le  <br>Facebook du professionel</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 2/4.jpg' alt='Person hiking on a trail through mountains while taking a photo with phone'>
+                        <figcaption>Tract réalisé pour la communcation de l'évenement <br> pour les organisateurs
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 2/5.png' alt='Street scene with person walking and others on motorbikes, all wearing masks'>
+                        <figcaption>Affiche et Logo pour l'événement</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <figure>
+                        <img class="imgGallerie" src='./image Projets/Projets 2/6.jpeg' alt='Fashionable-looking girl with blond hair and pink sunglasses'>
+                        <figcaption>Affiche de promotion réalisée <br>pour un professionnel <br> du massage assis </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+
+
+    </div>        
+
+ 
+            <h1 class='Pageprojets' style="  font-size: 7vh;" >Compétences utilisées</h1>
+            <div id='iconCompétences' class="flottement">
+                   <img src="../img/photoshop.png" style=" height: 80px; width: 80px; margin: auto; padding: 30px;" alt="" srcset="">
+            <img src="../img/communication.png" style=" height: 80px; width: 80px; margin: auto; padding: 30px;" alt="" srcset="">
+            </div>
+         
+
+            
+
+            
+    
+           
+
+
+    <a href="../Page projets/Projets 3.html">
+        <div class="button">Projet Suivant</div>
+      </a>
+    
+    </a>
+    <script>
+        
+document.addEventListener('DOMContentLoaded', function () {
+    var loader = document.getElementById('loader');
+    var body = document.body;
+    var gif = document.querySelector('#loader img');
+
+    // Attendez 2 secondes avant de montrer le GIF
+    setTimeout(function () {
+        gif.style.display = 'block';
+    }, 2000);
+
+    // Attacher un événement de fin de lecture du GIF
+    gif.addEventListener('load', function () {
+        // Masquer l'écran de chargement avec fondu
+        loader.style.transition = 'opacity 2s ease-in-out';
+        loader.style.opacity = 0;
+        
+        // Rétablir le défilement et cacher le loader après le fondu
+        setTimeout(function () {
+            body.classList.remove('loading'); /* Rétablit le défilement après le chargement */
+            loader.style.visibility = 'hidden';
+        }, 4000); // Vous pouvez ajuster la durée selon vos besoins
+    });
+});
+$(window).on("load", function () {
+    $("#loader").fadeOut(4000, function () {
+        // Animation terminée, masquer le loader
+        $("#loader").hide();
+    });
+});
+
+    </script>
+
+</body>
+</html>

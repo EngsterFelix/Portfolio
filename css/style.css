@@ -1,0 +1,394 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23000000' stroke-width='0.6' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='rotate(106 1000 750) scale(5) translate(-800 -600)'%3E%3Cuse fill='%23242424' href='%23s' y='2'/%3E%3Cuse fill='%23242424' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23333333' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23333333' href='%23s'/%3E%3Cuse fill='%233e3e3e' href='%23s' x='2'/%3E%3Cuse fill='%233e3e3e' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='rotate(106 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23484848'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(106 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23484848'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(106 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23515151'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='rotate(106 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23000000'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23585858'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='rotate(106 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23F8FF24'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='rotate(106 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23F8FF24'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='rotate(106 1000 750) scale(5) translate(-800 -600)'%3E%3Cg fill='%23F8FF24'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* font-family: 'Salsa', cursive; */
+    font-family: 'Kalam', cursive;
+
+
+}
+    /* @font-face {
+    font-family: 'Britannic';
+    src: url(../britannic_bold_regular-webfont.woff);
+  } */
+
+
+  #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+}
+
+#loader img {
+    max-width: 100%;
+}
+
+body.loading {
+    overflow: hidden; /* Empêche le défilement pendant le chargement */
+}
+
+
+
+
+
+header {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+
+.header{
+    text-decoration: none;
+    color: white;
+    font-size: 2.7vw;
+    transition: 0.15s ease-in;
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.container {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Ajoutez cette ligne pour éliminer la marge */
+  padding: 0; /* Ajoutez cette ligne pour éliminer le rembourrage */
+  box-sizing: border-box; /* Ajoutez cette ligne pour inclure la bordure et le remplissage dans la largeur et la hauteur totales */
+}
+
+  #video {
+    animation-name: flotement;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes flotement{
+    0%{
+        margin-top: -5px;
+    }
+    50%{
+        margin-top: 10px;
+
+    }
+    100%{
+        margin-top: -5px;
+
+    }
+}
+
+.titre{
+  color: white;
+  font-size: 8vh;
+  border-bottom: 2px solid #fff;
+  width: 5em;
+  margin: auto;
+  text-decoration: none;  
+  text-align: center;
+
+
+}
+#Apropos{
+  margin-top: 90px;
+  font-size: 9vh;
+}
+#titreCompetences{
+  width: 6em;
+}
+
+
+
+.container2 {
+  min-height: 50%;
+  display: flex;
+  color: white;
+  width: 70%;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center; /* Ajoutez cette ligne pour centrer le texte */
+
+}
+
+#videoslide{
+  display: flex;
+  flex-direction: column;
+}
+
+#ilevideo{
+  width: 270px;
+  height: 350px;
+  margin-right: 100px;
+  /* animation-name: flotement;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out; */
+}
+
+
+
+
+
+#desc{
+    color: white;
+    font-size: 2vw;
+    width: 50%;
+    padding: 50px;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+   
+}
+
+.bold{
+  font-weight: 700;
+}
+
+
+#photo{
+
+  width: 50%; 
+  animation-name: flotement;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+}
+
+
+
+#lune{
+  height: 100%;
+  width: 27%;
+  float: right;
+  /* animation-name: flotement;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out; */
+}
+
+
+#projets{
+  text-align: center;
+  font-size: 1em;
+  display: flex;
+  color: white;
+  font-size: 10vh;
+  border-bottom: 2px solid #fff;
+  width: 5em;
+  text-decoration: none;  
+  text-align: center;
+  margin-bottom: 30px;
+  margin: 20px auto;    
+
+}
+
+.projets-container{
+    border: 1px solid white;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+
+}
+
+.container3{
+  min-height: 50%;
+  color: white;
+  width: 70%;
+  margin: auto;
+  
+}
+
+
+
+
+
+
+
+.Pageprojets{
+  color: white;
+  font-size: 10vh;
+  border-bottom: 2px solid #fff;
+  width: 6em;
+  margin: auto;
+  text-decoration: none;  
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
+
+
+.button{
+  bottom: 20%;
+}
+
+.button{
+  margin: auto;
+  bottom: -100px;
+  left: 25%;
+  width: 10%;
+  border: 3px solid #ffffff;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 50px;
+}
+
+.button:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#iconCompétences{
+  width: 300px;
+  margin: auto;
+  justify-content: space-around;
+  display: flex;
+}
+.flottement{
+  animation-name: flotement;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+}
+
+#container-contact{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+}
+
+.icon-contact{
+  height: 70px;
+  width: 70px; 
+  margin: auto;   
+  padding-bottom:0px;
+}
+
+#fusée{
+  height: 600px;
+  width: 400px;
+}
+
+#iconCompétences {
+  position: relative;
+}
+
+.icon-linkedin,
+.icon-mail-container {
+  position: absolute;
+  top: 70%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.icon-mail-container {
+
+  left: 80%; 
+}
+#icon-cv{
+  left: 20%;
+}
+
+
+
+footer {
+
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+#footer{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Responsive */
+
+
+@media only screen and (max-width: 768px) {
+  
+  header, nav, .header3, .navbar3 {
+    font-size: 13px; /* Exemple : Réduire la taille de la police pour le header */
+}
+
+#video {
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+}
+
+.container2 {
+    width: 90%; /* Ajustez la largeur selon vos besoins */
+}
+
+#desc {
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    padding: 20px; /* Ajustez la marge intérieure selon vos besoins */
+}
+
+#photo {
+    width: 70%; /* Ajustez la largeur selon vos besoins */
+    display: flex;
+    flex-direction: column;
+}
+
+.projets-container {
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+}
+
+.button {
+    width: 30%; /* Ajustez la largeur selon vos besoins */
+    left: 35%; /* Ajustez la position selon vos besoins */
+}
+
+#iconCompétences {
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    margin: auto; /* Centrez horizontalement */
+    flex-direction: column; /* Changez la direction pour empiler les icônes */
+}
+@media only screen and (max-width: 768px) {
+  .menu,
+  .menu2,
+  .menu3,
+  .menu4,
+  .menu1 {
+    padding: 0 20px; /* Ajustez l'espacement pour les écrans plus petits */
+  }
+
+  .menu li,
+  .menu2 li,
+  .menu3 li,
+  .menu4 li,
+  .menu1 li {
+    font-size: 24px; /* Ajustez la taille de la police pour les écrans plus petits */
+    margin-right: 15px; /* Ajustez l'espacement entre les éléments pour les écrans plus petits */
+  }
+}
+ }
