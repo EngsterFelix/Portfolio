@@ -1,116 +1,126 @@
-
-
-/* ANIMATION HEADER  */
-.navbar,
-.navbar1,
-.navbar2,
-.navbar3,
-.navbar4 {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    gap: 10%;
+    position: absolute;
+    width: 30%;
+    top: 5%;
+    left: 60%;
+    z-index: 999;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligne le contenu à la fin verticalement */
+    align-items: center; /* Aligne le contenu à droite horizontalement */
 }
 
-.header,
-.header2,
-.header3,
-.header4,
-.header1 {
-  width: 100%;
-  height: 80px;
+#VoirPlus {
+
+    color: #e4e5e4;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 20px 0px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: bold; /* Optionnel : pour mettre en évidence le lien */
 }
 
-
-.menu,
-.menu2,
-.menu3,
-.menu4,
-.menu1 {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding: 0 100px;
-  animation-name: flotement;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function:ease-in-out;
-
-
-
+/* Effet Hover */
+#VoirPlus::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #f6a11a;
+    transition: all .3s ease-in-out;
+    transform: translateX(-100%);
 }
 
-.menu li,
-.menu2 li,
-.menu3 li,
-.menu4 li,
-.menu1 li {
-  display: block;
-  height: 100%;
-  font-size: 40px;   
-  /* ICI POUR MODIFIER LA TAILLE DU HEADER */
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-shadow: 0 0 40px white;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  text-align: center;
-  padding: 0 10px;
-  margin-right: 30px;
-  
+#VoirPlus:hover {
+    color: #d98500;
+    transition: color 0.5s ease-in-out;
+}
+
+#VoirPlus:hover::after {
+    transform: translateX(0%);
+}#VoirPlus{
+    font-size: 1.0rem;
+    top: 70%;
+    left: 50%;
+
 }
 
 
 
-.menu3 li {
-  border: 2px solid transparent;
-  border-bottom: 2px solid #fff;
-  margin-right: 0px;
-  padding-right: 20px;
-  transition: border 0.3s ease;
-  
+
+/* Conteneur du logo à gauche */
+.logo-container {
+    position: absolute;
+    left: -165%; /* Ajuste la position pour bien le placer */
+    top: 55%;
+    transform: translateY(-50%);
+    width: 50px; /* Ajuste la taille du logo */
 }
 
-.menu3 li:hover {
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid transparent;
-  
-}
-@media only screen and (max-width: 768px) {
-  .menu,
-  .menu2,
-  .menu3,
-  .menu4,
-  .menu1 {
-    padding: 0 20px; /* Ajustez l'espacement pour les écrans plus petits */
-  }
-
-  .menu li,
-  .menu2 li,
-  .menu3 li,
-  .menu4 li,
-  .menu1 li {
-    font-size: 24px; /* Ajustez la taille de la police pour les écrans plus petits */
-    /* Ajustez l'espacement entre les éléments pour les écrans plus petits */
-  }
-}
-@media only screen and (max-width:500px){
-
-
-  .menu li,
-  .menu2 li,
-  .menu3 li,
-  .menu4 li,
-  .menu1 li {
-    font-size: 15px; /* Ajustez la taille de la police pour les écrans plus petits */
-    /* Ajustez l'espacement entre les éléments pour les écrans plus petits */
-  }
-
+.logo-container img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
 
 }
+
+
+.logo-container:hover img {
+    opacity: 0.5; /* Rend l’image plus claire au survol */
+    content: url('../img/logo-hover.png'); /* Remplace l’image */
+}
+
+/* Liens de navigation */
+.nav a {
+    color: #e4e5e4;
+    text-decoration: none;
+    font-size: 1.3rem;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+#header-about{
+    top: 10%;
+    padding: 10px 5px;
+}
+
+/* Effet Hover */
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #f6a11a;
+    transition: all .3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.nav a:hover {
+    color: #d98500;
+    transition: color 0.5s ease-in-out;
+}
+
+.nav a:hover::after {
+    transform: translateX(0%);
+}
+@keyframes gradient-89 {
+    0% { background-position: 100% 0%; }
+    50% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}
+

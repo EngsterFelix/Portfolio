@@ -1,0 +1,66 @@
+/* Conteneur de la barre */
+#progressBar-container {
+    position: fixed;
+
+    bottom: 0; /* Collé en bas */
+    left: 0;
+    width: 100%; /* Toute la largeur de la page */
+    height: 8px; /* Hauteur de la barre */
+    background: #ACACA6; /* Couleur de fond de la barre */
+    z-index: 1000;
+    overflow: hidden; /* Évite tout dépassement */
+}
+
+/* Barre de progression dynamique */
+.percent {
+    height: 100%; /* Fait bien toute la hauteur */
+    background: #f6a11a; /* Couleur orange */
+    width: 0%; /* Commence à 0% et se remplit dynamiquement */
+    transition: width 0.5s ease-in-out;
+}
+
+
+
+
+/* Barre de progression */
+.progress {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #16223a;
+    z-index: 1;
+    margin-bottom: 10px; 
+}
+
+/* Remplissage dynamique de la barre */
+
+
+
+/* Points d'étape */
+/* .step {
+    width: 20px;
+    height: 20px;
+    background: #e4e5e4;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s, border 0.3s;
+    transition: all .3s ease-in-out;
+
+} */
+/* .step:hover {
+    background: #d98500;
+    transition: color 0.5s ease-in-out;
+} */
+
+/* Étape actuelle */
+/* .step.selected {
+    background: #f6a11a;
+} */
+
+/* Étape validée */
+/* .step.completed {
+    background: #f6a11a;
+    border: 3px solid #f6a11a;
+} */
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/arrow.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="css/carroussel.css">
+    <link rel="stylesheet" href="./css/progressBar.css">
+
+
+
+</head>
+<body>
+    <div class="container">
+        <nav class="nav" id="header-about">
+            <div class="logo-container">
+                <a href="./index.html">
+
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+            </a>
+            <a href="./projets.html">Projets</a>
+            <a href="./about.html" style="color: #f6a11a;">À propos</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="slider" id="slider-accueil">
+            <div class="list">
+                <button id="prev">Précédent</button>
+                <button id="next">Suivant</button>
+                <div class="item active">
+                    <img src="./img/photomoi.jpg" id="photo-moi" alt="Moi">
+                </div>
+            </div>
+
+    </div>
+
+
+    <div class="content" id="desc-about">
+        <p>C'est moi , </p>
+        <h2>Félix</h2>
+        <p>
+            Je suis un designer et développeur motivé par la création de solutions visuelles uniques. J'aime allier mes compétences techniques et artistiques pour donner vie à des idées originales. Mon objectif est de transformer des concepts en projets concrets et inspirants.
+
+
+            <br>
+           
+
+
+        </p>
+        <a href="ton-cv.pdf" download class="btn-cv">Télécharger mon CV</a>
+
+
+    </div>
+
+    <div class="letter-l"> 
+    <div data-svg-wrapper>
+        <svg width="836" height="1205" viewBox="-200 100 1036 1005" fill="none" xmlns="http://www.w3.org/2000/svg" id="letter-l-svg">
+        <path d="M185.014 768.442C177.59 786.295 131.56 1005 -80.7714 1005C-94.8774 1005 -106.014 999.793 -113.438 988.634C-120.862 977.476 -123.832 962.598 -120.862 943.257C-115.665 906.062 -90.4228 828.697 -45.8777 711.162L70.682 403.934C113 293.094 145.666 218.705 169.424 180.766C205.802 123.486 251.832 79.5966 308.256 47.6092C364.68 16.3657 421.846 0 479.012 0C498.315 0 513.164 4.46336 523.557 14.134C533.209 23.8046 537.663 35.7069 535.436 49.097C533.209 63.9748 525.785 76.621 513.906 86.2916C501.285 95.9622 484.952 100.426 464.164 100.426C450.8 100.426 431.497 98.1939 406.998 93.7306C385.468 90.0111 365.422 87.7794 346.862 87.7794C328.301 87.7794 313.453 91.4989 303.059 99.6817C288.211 110.84 273.362 133.901 257.029 169.608C240.696 205.315 213.969 275.984 175.363 380.873L66.2275 673.967C12.0309 820.514 -15.4386 897.136 -16.9234 903.831C-19.1507 918.708 -14.6961 926.147 -4.30227 926.147C70.682 926.147 184.272 766.21 185.014 766.21V768.442Z" fill="#E4E5E4"/>
+        </svg>
+        </div></div>
+
+ 
+
+    <div id="progressBar-container">
+        <div class="progress">
+            <div class="percent"></div>
+        </div>
+        <div class="steps">
+            <div class="step" data-page="index.html"></div>
+            <div class="step" data-page="projets.html"></div>
+            <div class="step" data-page="about.html"></div>
+            <div class="step" data-page="contact.html"></div>
+        </div>
+    </div>
+
+    <div class="arrow" id="arrow-gauche">
+        <a href="./projets.html">
+          <div class="arrow-top"></div>
+          <div class="arrow-bottom"></div>
+        </a>
+      </div>
+
+    <div class="arrow" id="arrow-about">
+        <a href="./contact.html">
+          <div class="arrow-top"></div>
+          <div class="arrow-bottom"></div>
+        </a>
+      </div>
+      
+
+<script src="./js/progressBar.js"></script>
+</body>
+</html>

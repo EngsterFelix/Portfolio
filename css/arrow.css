@@ -1,0 +1,171 @@
+/* Flèche principale */
+.arrow {
+    cursor: pointer;
+    height: 40px;
+    left: 130%;
+    top: 55%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%) ; /* Rotation de 90° dans le sens horaire, position centrée */
+    transition: transform 0.1s;
+    width: 40px;
+    animation: moveUpDown 2s ease-in-out infinite; /* Animation de déplacement haut-bas */
+    z-index: 998;
+    
+  }
+  #arrow-projet{
+    position: absolute;
+    left: 90%;  /* Centre horizontalement */
+    top: 60%;   /* Ajuste la position en bas */
+    transform: translateX(-50%); /* Centre parfaitement */
+    cursor: pointer;
+    z-index: 1000; /* S'assurer qu'elle est au-dessus */
+  }
+  
+  #arrow-about{
+    position: absolute;
+    left: 90%;  /* Centre horizontalement */
+    top: 50%;   /* Ajuste la position en bas */
+    transform: translateX(-50%); /* Centre parfaitement */
+    cursor: pointer;
+    z-index: 1000; /* S'assurer qu'elle est au-dessus */
+  }
+
+  #arrow-contact{
+    position: absolute;
+    left: 90%;  /* Centre horizontalement */
+    top: 60%;   /* Ajuste la position en bas */
+    transform: translateX(-50%); /* Centre parfaitement */
+    cursor: pointer;
+    z-index: 1000; /* S'assurer qu'elle est au-dessus */
+  }
+
+
+
+
+
+
+  /* Contenu de la flèche */
+  .arrow a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  /* Barres de la flèche */
+  .arrow-top, .arrow-bottom {
+    background-color: #e4e4e4; /* Bleu nuit */
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  
+  /* Animation de remplissage des barres */
+  .arrow-top:after, .arrow-bottom:after {
+    background-color: #f39c12; /* Orange */
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s;
+  }
+  
+  /* Rotation de la flèche */
+  .arrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+  }
+  
+  .arrow-top:after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+  }
+  
+  .arrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+  }
+  
+  .arrow-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+  }
+  
+  /* Zone d'hover étendue */
+  .arrow::before, .arrow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Permet le hover sur toute la zone */
+  }
+  
+  /* Animation au survol de la flèche */
+  .arrow:hover .arrow-top:after {
+    left: 0;
+    transition-delay: 0.15s;
+  }
+  
+  .arrow:hover .arrow-bottom:after {
+    right: 0;
+    transition-delay: 0s;
+  }
+  
+  /* Animation au clic */
+  .arrow:active {
+    transform: translateX(-50%) translateY(-50%) scale(1.5); /* Échelle pour agrandir sans déplacer */
+  }
+  
+  /* Animation de mouvement haut-bas */
+  @keyframes moveUpDown {
+    0% {
+      transform: translateX(-50%) translateY(-50%); /* Position de départ */
+    }
+    50% {
+      transform: translateX(-100%) translateY(-50%) ; /* Déplacement plus marqué vers le haut */
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) ; /* Retour à la position de départ */
+    }
+  }
+
+
+
+  #arrow-gauche {
+    left: 10%; /* Positionne la flèche sur la gauche de l'écran */
+    top: 50%; /* Centre verticalement */
+}
+
+#arrow-gauche .arrow-top {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+#arrow-gauche .arrow-bottom {
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+
+
+#arrow-gauche-contact {
+  left: 10%; /* Positionne la flèche sur la gauche de l'écran */
+  top: 60%; /* Centre verticalement */
+}
+
+#arrow-gauche-contact .arrow-top {
+transform: rotate(-45deg);
+transform-origin: bottom left;
+}
+
+#arrow-gauche-contact .arrow-bottom {
+transform: rotate(45deg);
+transform-origin: top left;
+}
+

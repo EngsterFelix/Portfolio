@@ -1,321 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    
-    <!-- FONT -->
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Salsa&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="script.js"></script> -->
- 
-
-    <!-- CSS -->
-
+    <title>Portfolio - One Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/arrow.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/modal.css">
-    <link rel="stylesheet" href="./css/animprojets.css">
-    <link rel="stylesheet" href="./css/logoslider.css">
+    <link rel="stylesheet" href="css/carroussel.css">
+    <link rel="stylesheet" href="./css/progressBar.css">
+
+
+
+    <style>
+      
+    </style>
 </head>
-
 <body>
-  
-  <div id="loader">
-    <img src="./img/anim/loader+lent.gif" alt="Chargement en cours">
-  </div>
-
-
-    <header>
-        <nav>
-            <div class="navbar3">
-                <div class="header3">
-                    <ul class="menu3">
-                        <li>Home</li>
-                        <li> <a href="#aboutAncrage">A propos</a></li>
-                        <li><a href="#projetsAncrage">Projets</a></li>
-                        <li> <a href="#headerContact">Contact</a></li>
-                    </ul>
+    <div class="container">
+        <nav class="nav">
+            <div class="logo-container">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+            <a href="./projets.html">Projets</a>
+            <a href="./about.html">À propos</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="slider" id="slider-accueil">
+            <div class="list">
+                <button id="prev">Précédent</button>
+                <button id="next">Suivant</button>
+                <div class="item active">
+                    <img src="./img/Projet 1 - Woden/Title Screen Clean.png" alt="Projet 1">
+                </div>
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1416339306562-f3d12fefd36f" alt="Projet 2">
+                </div>
+                <div class="item">
+                    <img src="./img/benaja-germann-TDudZ3FIXgY-unsplash.jpg" alt="Projet 3">
+                </div>
+                <div class="item">
+                    <img src="./img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="Projet 3">
+                </div>
+                <div class="item">
+                    <img src="./img/nathan-da-silva-k-rKfqSm4L4-unsplash.jpg" alt="Projet 3">
                 </div>
             </div>
-        </nav>
-    </header>
-    
-
-    <div class="container">
-        <!-- <img src="./img/anim/nom pour portefolio.mp4" id='nom' alt=""> -->
-        <video id="video" width="70%" height="100%"  muted >
-          <source src="./img/anim/nom pour portefolio.mp4" type="video/webm">
-          <!-- Ajoutez d'autres sources pour différents formats si nécessaire -->
-          <!-- <source src="chemin/vers/votre/video.mp4" type="video/mp4"> -->
-          Votre navigateur ne prend pas en charge la balise vidéo.
-      </video>
-      </div>
-
-      <script>
-       
-    </script>
-    <!-- <img src="./img/ile video.png" alt="" id='ilevideo'> -->
-    <div class='titre'>
-        <h2 id='Apropos' >A propos</h2>
-    </div>
-
-    <div class="container2" id='aboutAncrage'>
-
-        <img src="./img/anim/cadre moi.gif" id='photo' alt="Votre Photo">
-
-
-        <div id="desc" class="fade-right">
-            <h2 >Bienvenue !</h2>
-            <p>
-                Je m'appelle <span class="bold">Félix</span>, j'ai <span class="bold">19 ans</span> et je suis actuellement en <span class="bold">BUT Métiers de Multimédia et de l'Internet</span> 
-                à <span class="bold">Elbeuf</span>. Je suis un touche à tout qui aime <span class="bold">découvrir</span> de nouvelles choses mais je suis d'abord passionné par le <span class="bold">numérique</span>.
-                J'aime la <span class="bold">création</span> en général et j'aimerais à l'avenir pouvoir en faire mon métier.
-            </p>
-        </div>
-    </div>
-
-
-
-<!-- COMPETENCES -->
-
-  
-      <h1 class='titre' id="titreCompetences">Mes Compétences</h1>
-      
-      <div class="logos">
-        <div class="logos-slide"> 
-          <img src="./img/html.png" alt="" srcset="">
-          <img src="./img/css.png" alt="" srcset="">
-          <img src="./img/js.png" alt="" srcset="">
-          <img src="./img/php.png" alt="" srcset="">
-          <img src="./img/sql.png" alt="" srcset="">
-          <img src="./img/photoshop.png" alt="" srcset="">
-          <img src="./img/illustrator.png" alt="" srcset="">
-        </div>
-        <div class="logos-slide"> 
-          <img src="./img/premiere.png" alt="" srcset="">
-          <img src="./img/aftereffect.png" alt="" srcset="">
-          <img src="./img/photo.png" alt="" srcset="">
-          <img src="./img/camera.png" alt="" srcset="">
-          <img src="./img/krita.png" alt="" srcset="">
-          <img src="./img/wordpress.png" alt="" srcset="">
-          <img src="./img/communication." alt="" srcset="">
-        </div>
-        <div class="logos-slide"> 
-          <img src="./img/html.png" alt="" srcset="">
-          <img src="./img/css.png" alt="" srcset="">
-          <img src="./img/js.png" alt="" srcset="">
-          <img src="./img/php.png" alt="" srcset="">
-          <img src="./img/sql.png" alt="" srcset="">
-          <img src="./img/photoshop.png" alt="" srcset="">
-          <img src="./img/illustrator.png" alt="" srcset="">
-        </div>
-        
-
-        
-      </div>
-
-    </div>
-
-
-
-    <!-- PROJETS -->
-
-        <h1 class='titre'>Mes Projets</h1>
-
-    
-    <section>
-
-    <div class="container3" id="projetsAncrage">
-
-      <div class="row" >
-            <div class="item" id="1" >
-        <img src="./img/imgProjets/sitewordpress.png" alt="">
-        <div class="text">
-
-          <h3>Site Wordpress Complet</h4>
-          <p id="descProjet">J'ai eu l'occasion de travailler avec un professionnel avant ma formation pour réaliser son site pour particulier.
-            J'ai appris a utiliser Wordpress et Elementor et l'utilisation de CMS par moi-même
-          </p>
-        </div>
-        <a href="./Page projets/Projets 1.html">
-          <div class="button bold">En savoir plus</div>
-        </a>      
-      </div>
-
-
-
-      <div class="item" id="2">
-        <img src="./img/imgProjets/affiche vente + marche producteur bio.png" alt="">
-        <div class="text">
-          <h3>Affiches pour professionels</h4>
-          <p id="descProjet">Des affiches réalisées en dehors de ma formation pour des domaines d'activités en tout genres. Ces projets mon permis
-            de dévolopper ma création et surtout mes compétences sur Photoshop et Illustrator.
-          </p>
-        </div>
-        <a href="./Page projets/Projets 2.html">
-          <div class="button bold">En savoir plus</div>
-        </a>
-      </div>
-
-
-      <div class="item" id="3">
-
-            <img src="./img/imgProjets/portfolio3.jpg" alt="" >
+        <section class="hero">
+            <div data-svg-wrapper style="position: relative; z-index: 9999;" >
+                <svg width="575" height="1531" viewBox="0 100 915 1231" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M914.39 0C906.273 34.5601 895.062 70.5993 880.846 107.714C823.4 254.023 702.453 371.375 582 464.835C729.405 308.889 767.523 141.737 744.159 0H914.435H914.39Z" fill="#e4e5e4"/>
+                <path d="M505.177 820.112L398.94 1051.27H127.045C107.717 1327.13 65.5632 1551.16 8.61021 1731H0V19H136.732C126.059 97.2196 122.516 190.187 128.615 299.918C138.795 489.393 141.844 663.135 137.763 822.129L505.222 820.112H505.177Z" fill="#e4e5e4"/>
+                </svg>
+                </div>
+            <div class="illustration"> <img src="./img/illustration.png" alt="" style=" width: 650px;
+            height: 400px;"> </div>
             <div class="text">
-              <h3>Portfolio</h4>
-              <p id="descProjet">Dans la conception de ce portfolio j'ai développé mes compétences déjà aquices et en apprendre de nouvelles.
-    
-              </p>
-            </div>
-   <a href="./Page projets/Projets 3.html">
-            <div class="button bold">En savoir plus</div>
-          </a>      
-        </div>
-      </div>
-  
-        
-      <div class="row">
-          <div class="item" id="4">
-        <img src="./img/imgProjets/logo.jpg" alt="">
-        <div class="text">
-          <h3>Cartoon's truck</h4>
-          <p id="descProjet">Ce projet a lui aussi était réaliser lors de ma formation. J'ai du réaliser tout l'identité graphique d'un food truck que j'ai inventé et son site Internet.
-          </p>
-        </div>
-        <a href="../Page projets/Projets 4.html">
-          <div class="button bold">En savoir plus</div>
-        </a>      
-      </div>
-
-
-      <div class="item" id="5">
-        <img src="./img/imgProjets/filmnoir2.png" alt="">
-        <div class="text">
-          <h3>Dectective Marlow</h4>
-            <p id="descProjet">Un projet Audiovisuel réalisé lors de ma première année de ma formation. Il m'a permis de comprendre les grands principes de production vidéo et toutes les étapes à suivres.
-            
-            </p>
-        </div>
-        <a href="./Page projets/Projets 5.html">
-          <div class="button bold">En savoir plus</div>
-        </a>      
-      </div>
-
-
-      <div class="item" id="6">
-        <img src="./Page projets/image Projets/Projets 6/0.jpg" alt="" >
-          <div class="text">
-            <h3>DashBoard </h4>
-          <p id="descProjet">Projet de 2e année, nous avons réalisé un tableau de bord avec la base de donnée excel qui nous était attribué</p>
-          </div>
-        
-        <a href="./Page projets/Projets 6.html">
-                  <div class="button bold">En savoir plus</div>
-        </a>
-      </div>
-  </div>
-      </div>
-    
-
-
- <!-- CONTACT -->
-
-    
-    <div class="container2" id="container-contact">
-    <h2 class="titre" id="headerContact">Decollons Ensemble!</h2>
-    <p>Cliquez sur les icônes de la fusée pour me contacter</p>
-
-</div>
-
-<div class="container2" id="footer">
-
-    <div id='iconCompétences'>
-
-      <img src="./img/anim/fusée contact portfolio.gif" alt="" srcset="" id="fusée">
-      <a href="https://www.linkedin.com/in/f%C3%A9lix-engster-096120272/" class="icon-linkedin">
-        <img id='linkedin' src="./img/linkedin.jpg" class='icon-contact' alt="" srcset="">
-      </a>
-
-      <div class="icon-mail-container">
-        <a href="mailto:engsterfelix@gmail.com" subject="sujet">
-          
-          <img src="./img/mail.jpg" class='icon-contact' alt="" srcset="">
-        </a>
-      </div>
-      <div class="icon-linkedin" id="icon-cv">
-        <a href="./img/CV_EngsterFélix.pdf" download="CV_EngsterFélix.pdf">
-
-          <img src="./img/cv3.jpg" alt="">
-        </a>
-    </div>
-</div>
-
-
-<!-- FOOTER -->
-
-<footer>
-  <p>&copy; 2024 Engster Félix - Tous droits réservés</p>
-</footer>
-
-
-
-
-
-<!-- LOADER -->
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    var loader = document.getElementById('loader');
-    var body = document.body;
-    var gif = document.querySelector('#loader img');
-
-    setTimeout(function () {
-        gif.style.display = 'block';
-    }, 2000);
-
-    gif.addEventListener('load', function () {
-        loader.style.transition = 'opacity 2s ease-in-out';
-        loader.style.opacity = 0;
-        
-        setTimeout(function () {
-            body.classList.remove('loading');
-            loader.style.visibility = 'hidden';
-        }, 6000); 
-    });
-});
-$(window).on("load", function () {
-    $("#loader").fadeOut(6000, function () {
-        $("#loader").hide();
-    });
-});
-
-
-// LANCEMENT VIDEO
-
-document.addEventListener('DOMContentLoaded', function () {
-            var video = document.getElementById('video');
-    
-            setTimeout(function () {
-                video.volume = 0;
-    
-                // Démarrer la lecture
-                video.play();
-            }, 3000);
+                Je transforme vos idées en visuels percutants,<br> entre graphisme et illustration.
                 
-        });
+                <div class="arrow">
+                    <a href="./projets.html">
+                      <div class="arrow-top"></div>
+                      <div class="arrow-bottom"></div>
+                    </a>
+                  </div>
+                  
+            </div>               
 
-</script>
+         
+      
+
+        </section>
+    </div>
+
+    <div id="progressBar-container">
+        <div class="progress">
+            <div class="percent"></div>
+        </div>
+        <div class="steps">
+            <div class="step" data-page="index.html"></div>
+            <div class="step" data-page="projets.html"></div>
+            <div class="step" data-page="about.html"></div>
+            <div class="step" data-page="contact.html"></div>
+        </div>
+    </div>
+    
+
+<!--    
+<div class="container" id="container-projet">
+    <section class="projects-section" >
+        <div class="letter-e"> <div data-svg-wrapper>
+            <svg width="500" height="650" viewBox="0 0 600 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M575.593 30.5136C556.111 10.1712 527.774 0 488.811 0C378.12 0 277.17 69.3492 186.846 208.048C146.998 268.15 116.004 329.177 93.8659 390.205H92.9804C59.3303 384.657 26.5658 370.787 0 350.445C18.5961 383.732 47.8185 411.472 81.4685 426.266C65.529 476.198 55.7882 525.204 52.2461 575.136C47.8185 636.163 54.9027 679.622 73.4988 707.362C91.2093 735.101 120.432 746.197 158.509 748.971C289.567 760.067 427.71 682.396 469.329 467.876C454.275 492.842 303.736 730.478 201.015 614.896C187.732 600.102 185.961 569.588 188.617 528.903C191.274 501.163 195.702 471.574 202.786 440.136C310.82 391.129 380.777 356.917 413.541 337.499C479.956 298.664 526.889 260.753 554.34 224.691C581.791 188.63 596.845 151.644 599.502 114.657C602.159 78.5957 594.189 50.8561 575.593 30.5136ZM425.053 251.506C377.235 299.588 308.163 343.972 216.954 385.581C232.008 319.931 255.032 255.205 285.14 192.328C305.507 148.87 329.416 116.507 356.867 95.2395C377.235 79.5204 397.602 71.1985 417.969 71.1985C438.336 71.1985 453.39 78.5957 464.016 93.3902C475.528 108.185 479.956 127.602 478.185 152.568C475.528 184.931 457.818 218.219 425.053 251.506Z" fill="#16223A"/>
+            </svg>
+            </div></div>
+        <div class="project-content" id="projects">
+            <div class="project-title">Projet Featured          <em class="sous-titre">Réalisé avec amour</em></div>
+            <div class="project-image"></div>
+            <div class="project-caption"></div>
+            <a href="projets.html"><em class="sous-titre">Voir plus de Projets</em></a>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+  <section class="about-section">
+    <div class="about-container">
+        <div class="about-svg">
+            <svg width="400" height="700" viewBox="0 0 750 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M185.014 768.442C177.59 786.295 131.56 1005 -80.7714 1005C-94.8774 1005 -106.014 999.793 -113.438 988.634C-120.862 977.476 -123.832 962.598 -120.862 943.257C-115.665 906.062 -90.4228 828.697 -45.8777 711.162L70.682 403.934C113 293.094 145.666 218.705 169.424 180.766C205.802 123.486 251.832 79.5966 308.256 47.6092C364.68 16.3657 421.846 0 479.012 0C498.315 0 513.164 4.46336 523.557 14.134C533.209 23.8046 537.663 35.7069 535.436 49.097C533.209 63.9748 525.785 76.621 513.906 86.2916C501.285 95.9622 484.952 100.426 464.164 100.426C450.8 100.426 431.497 98.1939 406.998 93.7306C385.468 90.0111 365.422 87.7794 346.862 87.7794C328.301 87.7794 313.453 91.4989 303.059 99.6817C288.211 110.84 273.362 133.901 257.029 169.608C240.696 205.315 213.969 275.984 175.363 380.873L66.2275 673.967C12.0309 820.514 -15.4386 897.135 -16.9234 903.831C-19.1507 918.708 -14.6961 926.147 -4.30228 926.147C70.682 926.147 184.272 766.21 185.014 766.21V768.442Z" fill="#16223A"/>
+            </svg>
+        </div>
+        <div class="about-text">
+            <h2>A propos <i>C'est moi</i></h2>
+            <p>Je transforme les idées en visuels percutants, entre graphisme et illustration.</p>
+        </div>
+        <div class="about-image">
+            <img src="image.png" alt="Moi">
+        </div>
+    </div>
+</section>
+
+</div> -->
+
+      
+<script src="./js/carroussel.js"></script>
+<script src="./js/progressBar.js"></script>
 
 </body>
-
 </html>
