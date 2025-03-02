@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(() => {
         next.click();
-    }, 7000);
+    }, 9000);
 
     // 🔥 Charger directement l'image correcte au démarrage
     showSlider();
