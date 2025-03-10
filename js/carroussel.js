@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     let countItem = items.length;
-
-    // 🔥 Récupérer l'image active stockée
     let storedIndex = localStorage.getItem("activeSlide");
     let itemActive = storedIndex ? parseInt(storedIndex) : 0;
 
@@ -27,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
         items[itemActive].classList.add('active');
         thumbnails[itemActive].classList.add('active');
 
-        // 🔥 Sauvegarder l'index de l'image actuelle
         localStorage.setItem("activeSlide", itemActive);
     }
 
@@ -45,13 +42,24 @@ document.addEventListener("DOMContentLoaded", () => {
         thumbnail.addEventListener('click', () => {
             itemActive = index;
             showSlider();
+            clearInterval(autoSlide); // 🔥 Arrête l'auto-slide quand on clique
         });
     });
 
-    setInterval(() => {
+    // 🔥 Initialisation de l'auto-slide
+    let autoSlide = setInterval(() => {
         next.click();
-    }, 9000);
+    }, 5000);
 
-    // 🔥 Charger directement l'image correcte au démarrage
+    window.addEventListener("focus", () => {
+        autoSlide = setInterval(() => {
+            next.click();
+        }, 5000);
+    });
+
+    window.addEventListener("blur", () => {
+        clearInterval(autoSlide);
+    });
+
     showSlider();
 });
